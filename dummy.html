@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="contact-section">
+        <div class="contact-header">
+            <h2 class="Heading">Contact</h2>
+            <p>Let's connect! Feel free to reach out for collaboration, project inquiries, or career opportunities.</p>
+        </div>
+        <div class="contact-details">
+            <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="c9e4f45d-c6cb-457f-9e25-298f8bc10639">
+                <div class="input-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                    <small id="emailError" style="color: red; display: none;">Invalid email format</small>
+
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="input-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+                <p id="successMessage" style="color: green; display: none;">Message sent successfully!</p>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer-container">
+        <div class="footer-area">
+            <nav>
+                <a id="home">Home</a>
+                <a id="education">Education</a>
+                <a id="about">About</a>
+                <a id="skill">Skills</a>
+                <a id="project">Projects</a>
+            </nav>
+            <div class="social-icons">
+                <a href="mailto:kamalraj0653@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/kamalraj" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/kamalraj" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/kamalraj" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>&copy;<e id="date"></e> Kamalraj - Portfolio</p>
+        </div>
+    </div>
+
+    <script>
+        const d = new Date();
+        let year = d.getFullYear();
+        document.getElementById("date").innerHTML = year;
+
+        document.getElementById('contactForm').addEventListener('submit', function (event) {
+            const email = document.getElementById('email').value;
+            const emailError = document.getElementById('emailError');
+            const successMessage = document.getElementById('successMessage');
+
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if (!emailRegex.test(email)) {
+                emailError.style.display = 'block';
+                successMessage.style.display = 'none';
+                event.preventDefault(); // Prevent form submission on error
+            } else {
+                emailError.style.display = 'none';
+                successMessage.style.display = 'block';
+            }
+        });
+    </script>
+
+    <style>
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: #0d1117;
+        color: #d4d4d4;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .contact-section {
+        text-align: center;
+        padding: 60px 0;
+    }
+
+    .contact-header p {
+        color: #8b949e;
+        margin-bottom: 25px;
+        font-size: 14px;
+    }
+
+    .contact-details form {
+        max-width: 400px;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    .input-group {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    .input-group input,
+    .input-group textarea {
+        width: 100%;
+        padding: 10px;
+        background-color: #161b22;
+        border: none;
+        border-radius: 6px;
+        color: #c9d1d9;
+        outline: none;
+        resize: vertical;
+    }
+
+    button {
+        background-color: #3a3a3a;
+        color: #ffffff;
+        border: none;
+        padding: 10px 30px;
+        border-radius: 6px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: background 0.3s ease;
+    }
+
+    button:hover {
+        background-color: #5e5e5e;
+    }
+
+    .footer-container {
+        background-color: #161b22;
+        padding: 20px 0;
+    }
+
+    .footer-area {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 15px;
+        }
+
+        .footer-area nav a {
+            color: #8b949e;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .footer-area nav a:hover::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -3px;
+            width: 100%;
+            height: 2px;
+            background-color: #58a6ff;
+            animation: underline 0.3s ease forwards;
+        }
+
+    .social-icons a {
+        color: violet;
+        margin: 0 8px;
+        font-size: 1.4rem;
+    }
+    </style>
+</body>
+</html>

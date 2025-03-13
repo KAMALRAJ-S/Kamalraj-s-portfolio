@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAMALRAJ S</title>
+    <link rel="shortcut icon" href="https://img.icons8.com/?size=100&id=4AAzIa20OagD&format=png&color=000000" type="image/x-icon">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Navigation -->
+     <main id="main">
+        <nav id="navigation">
+            <section id="nav-sec">
+                <ul>
+                    <li><a id="home">Home</a></li>
+                    <li><a id="about">About</a></li>
+                    <li><a id="education">Education</a></li>
+                    <li><a id="skill">Skills</a></li>
+                    <li><a id="project">Projects</a></li>
+                    <li><a id="contact">Contact</a></li>
+                </ul>
+            </section>
+        </nav>
+<!-- profile page  -->
+        <aside id="profile-page">
+            <p id="Myname">I'm <span style="color:#da6913">Kamalraj</span></p>
+            <p id="typing-text"></p>
+            <div id="circle"></div>
+            <img id="prof" src="./img/prof.png" alt="">
+            <ul id="social-media">
+                <li onclick="linkedin()"><i class="fa-brands fa-linkedin"></i></li>
+                <li onclick="instagram()"><i class="fa-brands fa-instagram"></i></li>
+                <li onclick="github()"><i class="fa-brands fa-github"></i></li>
+            </ul>
+            <section id="hire-container">
+                <button id="hire-btn" onclick="email()">Hire Me</button>
+                <button id="down-btn" onclick="download()">Download Resume</button>
+            </section>
+        </aside>
+
+        <!-- About Page  -->
+        <main id="About-page">
+            <p class="Heading" id="about-heading">ABOUT</p>
+            <div id="para">
+                <p>I am <span style="color:#ff923e">Kamalraj</span>, a passionate and motivated Full-Stack Developer eager to begin my professional journey in the tech industry. With a Bachelor’s degree in Computer Science Engineering from K Ramakrishnan College of Technology (2020-2024), I have honed my skills in frontend and backend development, UI/UX designing, and database management.</p>
+                <p>My expertise includes Python, SQL, HTML, CSS, JavaScript, and various modern web technologies. I am proficient in frontend frameworks, backend development, and designing intuitive user experiences using Figma. My goal is to contribute to innovative projects while continuously learning and growing within a dynamic team environment.</p>
+            </div>
+            <div id="circle2"></div>
+            <img id="prof2" src="./img/prof2.png" alt="">
+        </main>
+
+        <!-- Education Page  -->
+         <main id="Education-page">
+            <p class="Heading">EDUCATION</p>
+            <div class="container">
+                <div class="player-card">
+                    <h2>B.E Computer Science Engineering</h2>
+                    <p><strong>K Ramakrishnan College of Technology</strong></p>
+                    <p>2020 - 2024</p>
+                    <div class="description">
+                        <p>Completed a Bachelor's degree in Computer Science Engineering, focusing on software development, algorithms, and system design. Gained hands-on experience in web development, database management, and problem-solving through projects and internships.</p>
+                    </div>
+                </div>
+                <div class="player-card">
+                    <h2>Higher Secondary (HSC)</h2>
+                    <p><strong>Sowdambikaa Matric HR SEC School</strong></p>
+                    <p>2019 - 2020</p>
+                    <div class="description">
+                        <p>Sowdambikaa Matric Higher Secondary School offers a well-structured Biology Group curriculum, focusing on Physics, Chemistry, Botony, Zoology and Mathematics. </p>
+                    </div>
+                </div>
+                <div class="player-card">
+                    <h2>Secondary School Leaving Certificate (SSLC)</h2>
+                    <p><strong>Sowdambikaa Matric HR SEC School</strong></p>
+                    <p>2017 - 2018</p>
+                    <div class="description">
+                        <p>Sowdambikaa Matric Higher Secondary School offers a well-structured Biology Group curriculum, focusing on Physics, Chemistry, Biology, and Mathematics.</p>
+                    </div>
+                </div>
+            </div>
+         </main>
+
+         <!-- skills page -->
+         <main id="Skills-page">
+            <p class="Heading">SKILLS</p>
+            <div class="center"><img style="height: 50px;" src="https://img.icons8.com/?size=100&id=v81HcAIQnRw8&format=png&color=000000" alt=""></i></div>
+            <div class="skills-container">        
+                <!-- Skill Nodes -->
+                <div class="skill" onmouseover="showDialog('HTML: Markup language for structuring web pages.')" onmouseout="hideDialog()"><img style="height: 50px;" src="https://img.icons8.com/?size=100&id=20909&format=png&color=000000" alt=""></div>
+                <div class="skill" onmouseover="showDialog('CSS: Styles web pages with design and layout.')" onmouseout="hideDialog()"><img style="height: 50px;" src="https://img.icons8.com/?size=100&id=21278&format=png&color=000000" alt=""></i></div>
+                <div class="skill" onmouseover="showDialog('JavaScript: Programming language for web interactivity.')" onmouseout="hideDialog()"><img style="height: 50px;" src="https://img.icons8.com/?size=100&id=PXTY4q2Sq2lG&format=png&color=000000" alt=""></div>
+                <div class="skill" onmouseover="showDialog('Python: Versatile programming language for various applications.')" onmouseout="hideDialog()"><img style="height: 50px;" src="https://img.icons8.com/?size=100&id=l75OEUJkPAk4&format=png&color=000000" alt=""></div>
+                <div class="skill" onmouseover="showDialog('React: JavaScript library for UI development.')" onmouseout="hideDialog()"><img style="height: 50px;" src="https://img.icons8.com/?size=100&id=asWSSTBrDlTW&format=png&color=000000" alt=""></div>
+                <div class="skill" onmouseover="showDialog('MySQL: Manages and stores structured data.')" onmouseout="hideDialog()"><img style="height: 50px;" src="https://img.icons8.com/?size=100&id=UFXRpPFebwa2&format=png&color=000000" alt=""></div>
+                <div class="skill" onmouseover="showDialog('Node.js: JavaScript runtime for server-side development.')" onmouseout="hideDialog()"><img style="height: 50px;" src="https://img.icons8.com/?size=100&id=hsPbhkOH4FMe&format=png&color=000000" alt=""></div>
+                <div class="skill" onmouseover="showDialog('Git: Version control system for code management.')" onmouseout="hideDialog()"><img style="height: 50px;" src="https://img.icons8.com/?size=100&id=20906&format=png&color=000000" alt=""></div>
+            </div>
+        </main>
+        <div id="dialogue-box" class="dialogue-box"></div>
+    
+        <!-- project page  -->
+        <main id="Projects-page">
+            <p class="Heading">PROJECTS</p>
+            <button id="scroll-left" class="scroll-button">&#9664;</button>
+            <div class="projects-container">
+                <div class="project-card">
+                    <img src="./img/Diabetics retinopathy.JPG" alt="Project 1" class="project-image">
+                    <div class="project-content">
+                        <h2 class="project-title">ML-BASED DIABETIC RETINOPATHY BLINDNESS PROGNOSIS</h2>
+                        <p class="project-description">Deep Learning-based system that uses a Convolutional Neural Network (CNN) to detect and classify Diabetic Retinopathy (DR) lesions such as microaneurysms, haemorrhages, and exudates from retinal fundus images.</p>
+                        <a href="https://github.com/kamalraj-123/project1" class="github-button" target="_blank">GitHub</a>
+                    </div>
+                </div>
+    
+                <div class="project-card">
+                    <img src="project2.jpg" alt="Project 2" class="project-image">
+                    <div class="project-content">
+                        <h2 class="project-title">Automation System</h2>
+                        <p class="project-description">An intelligent automation system for improved efficiency.</p>
+                        <a href="https://github.com/kamalraj-123/project2" class="github-button" target="_blank">GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="project2.jpg" alt="Project 2" class="project-image">
+                    <div class="project-content">
+                        <h2 class="project-title">Automation System</h2>
+                        <p class="project-description">An intelligent automation system for improved efficiency.</p>
+                        <a href="https://github.com/kamalraj-123/project2" class="github-button" target="_blank">GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="project2.jpg" alt="Project 2" class="project-image">
+                    <div class="project-content">
+                        <h2 class="project-title">Automation System</h2>
+                        <p class="project-description">An intelligent automation system for improved efficiency.</p>
+                        <a href="https://github.com/kamalraj-123/project2" class="github-button" target="_blank">GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="project2.jpg" alt="Project 2" class="project-image">
+                    <div class="project-content">
+                        <h2 class="project-title">Automation System</h2>
+                        <p class="project-description">An intelligent automation system for improved efficiency.</p>
+                        <a href="https://github.com/kamalraj-123/project2" class="github-button" target="_blank">GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="project2.jpg" alt="Project 2" class="project-image">
+                    <div class="project-content">
+                        <h2 class="project-title">Automation System</h2>
+                        <p class="project-description">An intelligent automation system for improved efficiency.</p>
+                        <a href="https://github.com/kamalraj-123/project2" class="github-button" target="_blank">GitHub</a>
+                    </div>
+                </div>
+                
+            </div>
+            <button id="scroll-right" class="scroll-button">&#9654;</button>
+        </main>
+
+        <!-- contact and footer  -->
+        <div class="contact-section">
+            <div class="contact-header">
+                <h2 class="Heading">Contact</h2>
+                <p>Let's connect! Feel free to reach out for collaboration, project inquiries, or career opportunities.</p>
+            </div>
+            <div class="contact-details">
+                <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="c9e4f45d-c6cb-457f-9e25-298f8bc10639">
+                    <div class="input-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+    
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                        <small id="emailError" style="color: red; display: none;">Invalid email format</small>
+    
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="input-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                    <p id="successMessage" style="color: green; display: none;">Message sent successfully!</p>
+                </form>
+            </div>
+        </div>
+    
+        <div class="footer-container">
+            <div class="footer-area">
+                <nav>
+                    <a class="home">Home</a>
+                    <a class="education">Education</a>
+                    <a class="about">About</a>
+                    <a class="skills">Skills</a>
+                    <a class="project">Projects</a>
+                </nav>
+                <div class="social-icons">
+                    <a href="mailto:kamalraj0653@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/kamalraj-s-54025934a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/KAMALRAJ-S" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/kamalrajsellamuthu/" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+                <p id="copy">&copy;<e id="date"></e> Kamalraj - Portfolio</p>
+            </div>
+        </div>
+    
+    
+
+     </main>
+     <script src="./index.js"></script>
+</body>
+</html>
