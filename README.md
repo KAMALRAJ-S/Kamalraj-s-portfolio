@@ -14,3 +14,6 @@ This **personal portfolio website** is designed to showcase my **skills, project
 ✅ **Interactive project showcase** with detailed descriptions and direct links  
 ✅ **Downloadable resume section** for easy access to my qualifications  
 ✅ **Contact form with email integration** for quick and efficient communication  
+
+
+![scghjgfv](https://github.com/user-attachments/assets/26853efd-df35-4835-9fe9-dd059455b7b0)
