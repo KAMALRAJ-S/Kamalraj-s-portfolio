@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // open social media 
 
 let linkedin=()=>{
-    let lin=open('https://www.linkedin.com/in/kamalraj-s-54025934a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app','_blank')
+    let lin=open('https://www.linkedin.com/in/kamalraj2003','_blank')
 }
 
 let instagram=()=>{
